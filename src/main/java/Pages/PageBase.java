@@ -10,10 +10,12 @@ public class PageBase {
         this.driver = driver;
         PageFactory.initElements(driver,this);
     }
-
+    // Function to insert data into element
     public void insertIntoElements(WebElement element ,String value){
         element.sendKeys(value);
     }
+
+    //Function to Submit Action
     public void clickOnElement(WebElement element){
         element.click();
     }

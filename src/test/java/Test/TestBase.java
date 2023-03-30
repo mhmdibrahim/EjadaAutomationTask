@@ -13,6 +13,7 @@ public class TestBase {
     @BeforeTest
     public void start_driver()
     {
+        //Setup a driver
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         WebDriverManager.chromedriver().setup();
